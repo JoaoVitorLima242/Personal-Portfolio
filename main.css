@@ -1,0 +1,327 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  p {font-size: 30px;}
+  h3 {font-size: 35px;}
+  h3, p {font-family: Roboto Condensed;}
+  a{text-decoration: none; font-family: poppins;}
+  h1 {font-family: anton;}
+  
+  /* -- Nav Bar -- */
+  nav {
+    position: fixed;
+    top: 0;
+    background: rgb(35, 35, 35);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .flex-link{
+    display: flex;
+    align-items: center;
+  }
+  .nav-link{
+    display: block;
+  }
+  nav a{
+    color: white;
+    padding: 10px;
+    display: block;
+    padding: 24.4px;
+    font-size: 1.3rem;
+    transition: background 0.2s ease-in;  
+  }
+  nav a:hover{
+    background: #38B0DE;
+    transition: background 0.2s ease-out;
+  }
+  nav li{
+     list-style: none; 
+  }
+  /* -- Welcome -- */
+  #welcome-section {
+    background: #236B8E;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #welcome-section h1, p {
+    color: white;
+    line-height: 1.6;
+  }
+  #welcome-section h1 {
+    font-size: 80px;
+    font-family: anton;
+  }
+  #welcome-section p {
+    font-size: 30px;
+    background: rgb(35, 35, 35);
+    padding: 6px;
+    border-radius: 10px;
+  }
+  /* -- About me -- */
+  #about-section {
+    height: auto;
+    background: #2F2E42;
+    padding: 130px 0;
+  }
+  .title-about {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+  }
+  #about-section p {
+    margin: 0 50px;
+    padding-top: 30px;
+  }
+  #about-section img {
+    width: 300px;
+    border-radius: 100%;
+    margin: 0 70px;
+  }
+  .about-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .text-title1 {
+    color: #38B0DE;
+  }
+  .text-title2 {
+    color: #C0D9D9;
+    border-left: 3px solid;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  
+  /* -- Projects -- */
+  #projects {
+    background: #12385C;
+    height: auto;
+    padding-bottom: 70px;
+  }
+  #projects a {
+    margin: 0 20px;
+  }
+  #projects h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 80px;
+    color: white;
+    border-bottom: solid 1px;
+    margin: 0 80px 90px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  #projects img {
+    width: 100%;
+    height: calc(100% - 3.3rem);
+    display: block;
+    object-fit: cover;
+  }
+  #projects p {
+    font-size: 24px;
+  }
+  .project {
+    background: rgb(35, 35, 35);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .project-title {
+    text-align: center;
+    padding: 6px;
+  }
+  .code {
+    color: rgb(35, 35, 35);
+    transition: color 0.3s ease-out;
+  }
+  .project:hover .code{
+    color: #F5AE1E;
+  }
+  /* -- Contact us -- */
+  #contact-us {
+    background: rgb(35, 35, 35);
+    padding-top: 130px;
+    padding-bottom: 40px;
+    color: white;
+    height: 65vh;
+    text-align: center;
+  }
+  #contact-us h1 {
+    font-size: 60px;
+  }
+  #contact-us p {
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+  .flex.ctc {
+    display: flex;
+    align-items: center;
+  }
+  #contact-us a {
+    font-size: 25px;
+    color: white;
+    margin: 40px 50px;
+    text-shadow: 3px 3px 1px black;
+  }
+  .link{
+    display: inline-block;
+  }
+  .move {
+    transition: transform 0.3s ease-out;
+  }
+  .move:hover{
+    transform: translateY(8px);
+  }
+  #contact-us i {
+    margin: 5px;
+  }
+  /* -- footer --*/
+  footer {
+    background: rgb(35, 35, 35);
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid #236B8E 3px;
+  }
+  footer p {
+    margin: 10px;
+    margin-right: 50px;
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  
+  @media all and (max-width: 1218px) {
+    /* --  about us -- */
+    .about-flex {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #about-section img{
+      margin-top: 30px;
+    }
+    .title-about {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    }
+    /* -- Projects -- */
+    
+    #projects p {
+    font-size: 18px;
+  }
+  }
+  @media all and (max-width: 642px) {
+    /* -- Welcome -- */
+    #welcome-section h1 {
+    font-size: 50px;
+    }
+    
+    /* -- About us -- */
+    #about-section h3 {
+      font-size: 26px
+    } 
+    #about-section p {
+      font-size: 20px;
+    }
+    #about-section img {
+      width: 200px;
+    }
+    /* -- Projects -- */
+    
+    #projects p {
+    font-size: 16px;
+  }
+    /* -- Contact -- */
+    #contact-us a {
+    font-size: 20px;
+    margin: 40px 8px;
+  }
+    #contact-us h1{
+      font-size: 50px;
+    }
+    #contact-us p {
+     font-size: 24px;
+    }
+  }
+  @media all and (max-width: 520px){
+    /* -- Projects -- */
+    
+    #projects p {
+    font-size: 20px;
+  }
+  } 
+  @media all and (max-width: 430px) {
+    /* --  Nav Bar --*/
+    nav {
+      justify-content: center;
+      height: 70px;
+    }
+    nav a{
+    padding: 23.3px 12px;
+    font-size: 1.1rem;
+    }
+    /* -- Footer --*/
+    footer p{
+      font-size: 14px;
+    }
+  }
+  @media all and (max-width: 378px) {
+   /* -- Welcome -- */
+    #welcome-section h1 {
+    font-size: 40px;
+    font-family: anton;
+    }
+    #welcome-section p {
+    font-size: 20px;
+  }
+    
+    /* -- About us -- */
+    #about-section h3 {
+      font-size: 20px
+    } 
+    #about-section p {
+      font-size: 20px;
+    }
+    #about-section img {
+      width: 150px;
+      margin: 20px 10px;
+    }
+    /* -- Projects -- */
+    #projects h1 {
+    font-size: 35px;
+    margin: 0 10px 50px;
+  }
+    #projects img {
+    height: calc(80% - 0.8rem);
+    }
+    #projects p {
+    font-size: 17px; 
+    }
+    /* -- Contact -- */
+    #contact-us a {
+    font-size: 24px;
+    margin: 20px 14px;
+  }
+    #contact-us h1{
+      font-size: 40px;
+    }
+    #contact-us p {
+     font-size: 18px;
+    }
+  }
