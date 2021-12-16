@@ -296,6 +296,11 @@
     #projects p {
     font-size: 20px;
   }
+  .jv-img {
+    max-width: 300px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
   } 
   @media all and (max-width: 450px) {
     /* --  Nav Bar --*/
