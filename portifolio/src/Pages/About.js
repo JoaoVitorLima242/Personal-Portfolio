@@ -52,7 +52,7 @@ const About = () => {
                 <img src={JvImage} alt="My image :)" className="jv-img"/> 
             </div>
             <div>
-                <p>My name is João Vitor Brietzke de Lima, and I'm from the state of Rio Grande do Sul. I love to design websites, and like to give a first impression that makes the user stay on the page. I love programming, and always find an optimal solution for the customer, whether solo or in a team. I have knowledge in <span class="text-title1">html, css, javascript, git and react.</span></p>
+                <p>My name is João Vitor Brietzke de Lima and I'm from the state of Rio Grande do Sul. I love to design websites and like to give a first impression that makes the user stay on the page. I love programming, and always find an optimal solution for the customer, whether solo or in a team. I have knowledge in <span class="text-title1">html, css, javascript, git and react.</span></p>
                 <div className="cardcode-container">
                     {codeTipe ? codeTipe.map((code) => {
                     return <Card props={code}/>
