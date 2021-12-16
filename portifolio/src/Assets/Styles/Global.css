@@ -140,7 +140,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px 40px;
+    margin: 20px auto;
   }
   /* -- Projects -- */
   #projects {
